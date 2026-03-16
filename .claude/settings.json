@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/HTPC/Documents/Coding Projects/Coding-Projects/**)",
+      "WebFetch(domain:www.cdfcpa.com)"
+    ]
+  }
+}
