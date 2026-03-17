@@ -220,15 +220,44 @@ ul {
 .logo {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
-.logo img {
-    height: 48px;
-    width: auto;
+.logo-mark {
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--white);
+    letter-spacing: 1px;
 }
 
-.footer .logo img {
-    height: 52px;
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text .firm-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.logo-text .firm-subtitle {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .nav-menu {
