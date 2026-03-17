@@ -1,5 +1,11 @@
 {
   "permissions": {
+    "allow": [
+      "Read(//c/Users/HTPC/Downloads/Minimalist Logo with 'CDF' in Square \\(2\\)/**)",
+      "Read(//c/Users/HTPC/Downloads/Minimalist Logo with 'CDF' in Square \\(1\\)/**)",
+      "Bash(cp \"/c/Users/HTPC/Downloads/Minimalist Logo with ''CDF'' in Square \\(2\\)/2.png\" \"/c/Users/HTPC/Documents/Coding Projects/Coding-Projects/CDF/images/logo-white.png\")",
+      "Bash(cp \"/c/Users/HTPC/Downloads/Minimalist Logo with ''CDF'' in Square \\(1\\)/2.png\" \"/c/Users/HTPC/Documents/Coding Projects/Coding-Projects/CDF/images/logo-color.png\")"
+    ],
     "additionalDirectories": [
       "C:\\Users\\HTPC\\Documents\\Coding Projects\\Coding-Projects\\CDF"
     ]
