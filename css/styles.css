@@ -442,7 +442,7 @@ ul {
     position: relative;
     z-index: 2;
     max-width: 700px;
-    padding: 140px 0 80px;
+    padding: 160px 0 100px;
 }
 
 .hero-badge {
@@ -458,13 +458,13 @@ ul {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     color: var(--white);
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     line-height: 1.15;
 }
 
@@ -475,8 +475,8 @@ ul {
 .hero p {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 40px;
-    line-height: 1.8;
+    margin-bottom: 48px;
+    line-height: 1.9;
 }
 
 .hero-buttons {
@@ -518,7 +518,7 @@ ul {
 /* ===== Page Hero (inner pages) ===== */
 .page-hero {
     position: relative;
-    padding: 200px 0 100px;
+    padding: 220px 0 120px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     overflow: hidden;
 }
@@ -552,7 +552,7 @@ ul {
 .page-hero h1 {
     font-size: 3rem;
     color: var(--white);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .page-hero p {
@@ -564,7 +564,7 @@ ul {
 
 /* ===== Sections ===== */
 .section {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .section-alt {
@@ -577,7 +577,7 @@ ul {
 
 .section-header {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 80px;
 }
 
 .section-header .overline {
@@ -587,12 +587,12 @@ ul {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--accent);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .section-header h2 {
     font-size: 2.5rem;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .section-header p {
@@ -600,6 +600,7 @@ ul {
     color: var(--text-light);
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.9;
 }
 
 .section-dark .section-header .overline {
@@ -618,13 +619,13 @@ ul {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 40px;
 }
 
 .service-card {
     background: var(--white);
     border-radius: var(--radius);
-    padding: 40px 32px;
+    padding: 48px 36px;
     box-shadow: var(--shadow-sm);
     transition: all var(--transition);
     position: relative;
@@ -697,13 +698,13 @@ ul {
 .values-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 40px;
 }
 
 .value-card {
     display: flex;
-    gap: 20px;
-    padding: 32px;
+    gap: 24px;
+    padding: 40px;
     background: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
@@ -730,7 +731,7 @@ ul {
 
 .value-card h3 {
     font-size: 1.1rem;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
@@ -744,12 +745,12 @@ ul {
 .industries-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 24px;
 }
 
 .industry-item {
     text-align: center;
-    padding: 32px 16px;
+    padding: 36px 16px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius);
@@ -764,7 +765,7 @@ ul {
 
 .industry-item .industry-icon {
     font-size: 2rem;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .industry-item span {
@@ -778,7 +779,7 @@ ul {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 40px;
 }
 
 .team-card {
@@ -812,7 +813,7 @@ ul {
 }
 
 .team-card-body {
-    padding: 28px;
+    padding: 32px;
 }
 
 .team-card h3 {
@@ -862,13 +863,13 @@ ul {
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 40px;
 }
 
 .testimonial-card {
     background: var(--white);
     border-radius: var(--radius);
-    padding: 40px 32px;
+    padding: 48px 36px;
     box-shadow: var(--shadow-sm);
     position: relative;
     transition: all var(--transition);
@@ -928,7 +929,7 @@ ul {
 /* ===== CTA Banner ===== */
 .cta-banner {
     background: linear-gradient(135deg, var(--primary) 0%, var(--accent-dark) 100%);
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -948,14 +949,15 @@ ul {
 .cta-banner h2 {
     color: var(--white);
     font-size: 2.2rem;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .cta-banner p {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.1rem;
     max-width: 500px;
-    margin: 0 auto 32px;
+    margin: 0 auto 40px;
+    line-height: 1.9;
 }
 
 .cta-banner .btn {
@@ -972,9 +974,9 @@ ul {
 /* ===== Service Detail (services page) ===== */
 .service-detail {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     align-items: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .service-detail:nth-child(even) {
@@ -997,20 +999,20 @@ ul {
 
 .service-detail-content h2 {
     font-size: 2rem;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .service-detail-content p {
     color: var(--text-light);
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     line-height: 1.8;
 }
 
 .service-detail-content ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 32px;
+    gap: 14px;
+    margin-bottom: 40px;
 }
 
 .service-detail-content ul li {
@@ -1047,7 +1049,7 @@ ul {
 .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    gap: 40px;
     position: relative;
 }
 
@@ -1099,7 +1101,7 @@ ul {
 /* ===== About Story ===== */
 .about-story {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     align-items: center;
 }
 
@@ -1109,12 +1111,12 @@ ul {
 
 .about-story-content h2 {
     font-size: 2.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .about-story-content p {
     color: var(--text-light);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     line-height: 1.8;
 }
 
@@ -1135,7 +1137,7 @@ ul {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
+    gap: 80px;
 }
 
 .contact-info-cards {
@@ -1282,7 +1284,7 @@ ul {
 
 /* Map embed */
 .contact-map {
-    margin-top: 60px;
+    margin-top: 80px;
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -1297,15 +1299,15 @@ ul {
 /* ===== Footer ===== */
 .footer {
     background: var(--primary);
-    padding: 80px 0 0;
+    padding: 100px 0 0;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 48px;
-    padding-bottom: 60px;
+    gap: 56px;
+    padding-bottom: 72px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1554,7 +1556,7 @@ ul {
     }
 
     .section {
-        padding: 60px 0;
+        padding: 80px 0;
     }
 
     .section-header h2 {
@@ -1596,7 +1598,7 @@ ul {
     }
 
     .page-hero {
-        padding: 160px 0 60px;
+        padding: 180px 0 80px;
     }
 
     .page-hero h1 {
