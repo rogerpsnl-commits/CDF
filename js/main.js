@@ -21,7 +21,6 @@ navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('open');
 });
 
-// Close mobile menu when a link is clicked
 navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
@@ -29,7 +28,6 @@ navMenu.querySelectorAll('a').forEach(link => {
     });
 });
 
-// Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
         navToggle.classList.remove('active');
@@ -40,12 +38,6 @@ document.addEventListener('click', (e) => {
 // ===== Scroll-Triggered Fade-Up Animations =====
 const fadeElements = document.querySelectorAll('.fade-up');
 
-const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -60px 0px',
-    threshold: 0.1
-};
-
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -53,7 +45,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
             fadeObserver.unobserve(entry.target);
         }
     });
-}, observerOptions);
+}, { root: null, rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
 
 fadeElements.forEach(el => fadeObserver.observe(el));
 
@@ -63,23 +55,18 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-
         const submitBtn = contactForm.querySelector('.form-submit-btn');
         const originalText = submitBtn.textContent;
 
-        // Show sending state
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         submitBtn.style.opacity = '0.7';
 
-        // Simulate form submission
         setTimeout(() => {
             submitBtn.textContent = 'Message Sent!';
-            submitBtn.style.background = '#2a9d8f';
             submitBtn.style.opacity = '1';
             contactForm.reset();
 
-            // Reset button after delay
             setTimeout(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
@@ -98,14 +85,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(targetId);
         if (target) {
             e.preventDefault();
-            const headerOffset = 80;
+            const headerOffset = 100;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
         }
     });
 });
@@ -144,3 +128,20 @@ const statObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 statNumbers.forEach(el => statObserver.observe(el));
+
+// ===== Floating Contact Widget =====
+const contactWidget = document.getElementById('contactWidget');
+
+if (contactWidget) {
+    const widgetToggle = contactWidget.querySelector('.contact-widget-toggle');
+
+    widgetToggle.addEventListener('click', () => {
+        contactWidget.classList.toggle('open');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!contactWidget.contains(e.target)) {
+            contactWidget.classList.remove('open');
+        }
+    });
+}
